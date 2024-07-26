@@ -1,0 +1,24 @@
+spring:
+  security:
+    basic:
+      enabled: false
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: null
+            client-secret: null
+  application:
+    name: security-filter-chain
+  debug: true
+
+  logging:
+    level:
+      org.springframework.security: TRACE
+
+com:
+  example:
+    security-filter-chain:
+      cookie:
+        name: "securityFilterChain"
+        expires-in: 900
